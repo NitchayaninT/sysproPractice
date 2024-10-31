@@ -17,7 +17,6 @@ int main() {
     write(out, &c, 1);
     printf("writing to file.out\n");
 
-    // lseek(in,1,SEEK_CUR);
     counter--;
   }
 }
