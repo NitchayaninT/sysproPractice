@@ -30,9 +30,9 @@ int main() {
   thread_args[2].message = "You!!";
   for (int i = 0; i < 3; i++) {
     pthread_create(&thread[i], NULL, &task, &thread_args[i]);
-    //usleep(100000);
+    usleep(100000);
   }
   for (int i = 0; i < 3; i++) {
-    pthread_join(thread[i], (void*)&thread_args[i]);
+    pthread_join(thread[i], (void *)&thread_args[i]);
   }
 }
